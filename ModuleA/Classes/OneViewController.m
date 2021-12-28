@@ -13,6 +13,11 @@
 
 @implementation OneViewController
 
++ (instancetype)createVC {
+    
+    return [[OneViewController alloc] initWithNibName:@"Frameworks/ModuleA.framework/OneViewController" bundle:nil];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
