@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.name             = 'ModuleA'
   s.version          = '0.1.0'
   s.summary          = 'en,没啥用，哈哈哈，是的1、pod install 2、pod update '
+  s.platform = :ios, '9.0'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
