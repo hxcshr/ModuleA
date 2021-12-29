@@ -1,15 +1,36 @@
 PODS:
-  - ModuleA (0.1.0)
+  - AFNetworking (4.0.1):
+    - AFNetworking/NSURLSession (= 4.0.1)
+    - AFNetworking/Reachability (= 4.0.1)
+    - AFNetworking/Security (= 4.0.1)
+    - AFNetworking/Serialization (= 4.0.1)
+    - AFNetworking/UIKit (= 4.0.1)
+  - AFNetworking/NSURLSession (4.0.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (4.0.1)
+  - AFNetworking/Security (4.0.1)
+  - AFNetworking/Serialization (4.0.1)
+  - AFNetworking/UIKit (4.0.1):
+    - AFNetworking/NSURLSession
+  - ModuleA (0.1.0):
+    - AFNetworking
 
 DEPENDENCIES:
   - ModuleA (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
 
 EXTERNAL SOURCES:
   ModuleA:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ModuleA: 0384ac6ccd55a1521a7e47735c5c02162755b5cb
+  AFNetworking: 7864c38297c79aaca1500c33288e429c3451fdce
+  ModuleA: ee2c9afbe227e5e99a99d4bba138a06de1869815
 
 PODFILE CHECKSUM: ef7e5040792d66070151a6dd1cafd4896e65f562
 

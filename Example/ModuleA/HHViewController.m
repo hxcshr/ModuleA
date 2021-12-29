@@ -7,6 +7,7 @@
 //
 
 #import "HHViewController.h"
+#import <ModuleA/OneViewController.h>
 
 @interface HHViewController ()
 
@@ -18,6 +19,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+- (IBAction)btnClick:(id)sender {
+    NSBundle *bundle = [NSBundle bundleForClass:[OneViewController class]];
+    
+    bundle = [NSBundle bundleWithPath: [bundle.bundlePath stringByAppendingPathComponent:@"ModuleA.bundle"]];
+    NSString *path = [bundle pathForResource:@"OneViewController" ofType:@".nib"];
+    NSLog(@"%@",path);
+    OneViewController *one = [[OneViewController alloc] initWithNibName:@"OneViewController" bundle:bundle];
+    [self.navigationController pushViewController:one animated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

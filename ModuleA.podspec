@@ -37,7 +37,7 @@ TODO: Add long description of the pod here.
   }
 
   s.public_header_files = 'ModuleA/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   s.dependency 'AFNetworking'
   s.requires_arc = true
 end

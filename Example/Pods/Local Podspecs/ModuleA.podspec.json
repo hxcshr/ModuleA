@@ -1,7 +1,7 @@
 {
   "name": "ModuleA",
   "version": "0.1.0",
-  "summary": "A short description of ModuleA.",
+  "summary": "en,没啥用，哈哈哈，是的1、pod install 2、pod update",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/hxcshr/ModuleA",
   "license": {
@@ -18,5 +18,17 @@
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "ModuleA/Classes/**/*"
+  "source_files": "ModuleA/Classes/**/*.{h,m}",
+  "resource_bundles": {
+    "ModuleA": [
+      "ModuleA/Assets/*"
+    ]
+  },
+  "public_header_files": "ModuleA/Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+
+    ]
+  },
+  "requires_arc": true
 }
